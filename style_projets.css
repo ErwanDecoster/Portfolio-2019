@@ -1,0 +1,197 @@
+body{
+  background: #333333;
+  padding-top: 100px;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 100px;
+  font-family: Arial;
+}
+h2{
+  margin: 0;
+  padding: 0;
+}
+h1{
+  margin: 0;
+  font-size: 30px;
+  background: -webkit-linear-gradient(left, #00b371, #00d4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ico{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+.ico_asso{
+  background-image: url(images/projects_images/ico_assos.png);
+}
+.ico_work{
+  background-image: url(images/projects_images/work_in_progres.jpg);
+}
+.ico_conn{
+  background-image: url(images/projects_images/ico_connection.png);
+}
+.ico_bout{
+  background-image: url(images/projects_images/ico_button.png);
+}
+.ico_javascipts{
+  background-image: url(images/projects_images/ico_javascipts.png);
+}
+.ico_tree{
+  background-image: url(images/projects_images/ico_tree.png);
+}
+@media screen and (min-device-width: 480px){
+  .projets{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+    min-width: 800px;
+    height: auto;
+  }
+  .titre{
+    margin-bottom: 50px;
+    height: 30px;
+    background: #fff;
+    width: auto;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .projet{
+    margin-bottom: 50px;
+    width: auto;
+    height: 300px;
+    background: #fff;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+  }
+
+  .projet img{
+    height: 300px;
+    float: right;
+    border-radius: 10px;
+  }
+  .blocG{
+    margin: 10px;
+    width: 50%;
+  }
+  .blocG h2{
+    margin: 0;
+  }
+  .blocD{
+    width: 70%;
+  }
+  .ico_pres{
+    background-image: url(images/projects_images/light_version/ico_pres_light.png);
+  }
+  .ico_real{
+    background-image: url(images/projects_images/light_version/ico_real_light.png);
+  }
+}
+@media screen and (max-device-width: 480px){
+  .projets{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .titre{
+    margin-bottom: 50px;
+    width: auto;
+    height: 30px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .projet{
+    margin-bottom: 50px;
+    width: auto;
+    height: auto;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+  }
+  .projet img{
+    width: 100%;
+    border-radius: 10px;
+    padding: 0px;
+  }
+  .blocG{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  .blocD{
+    width: 100%;
+    height: auto;
+    padding-bottom: 0px;
+  }
+  ul{
+    list-style: none;
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li{
+    width: 70px;
+    height: 30px;
+  }
+  li::before{
+    content: "• "; color: #fff;
+  }
+  .ico_pres{
+    background-image: url(images/projects_images/light_version/ico_pres_light.png);
+  }
+  .ico_real{
+    background-image: url(images/projects_images/light_version/ico_real_light.png);
+  }
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+a:visited:hover{
+  color: #6493E8;
+}
+a:hover{
+  color: #6493E8;
+}
+a:visited{
+  color: #000;
+}
+@media (prefers-color-scheme: dark){
+  .ico_pres{
+    background-image: url(images/projects_images/night_version/ico_pres_night.png);
+  }
+  .ico_real{
+    background-image: url(images/projects_images/night_version/ico_real_night.png);
+  }
+  a{
+    color: #ddd;
+  }
+  a:visited{
+    color: #ddd;
+  }
+  H1,H2{
+    color: #ddd;
+  }
+  body{
+    background: #000;
+  }
+  .titre,.projet{
+    background: #222222;
+  }
+  ul{
+    list-style: none;
+  }
+  li::before {
+    content: "• "; color: #ddd;
+  }
+}
